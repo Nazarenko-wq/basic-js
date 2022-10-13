@@ -22,8 +22,6 @@ function createDreamTeam(members) {
         for(let word of elem.split(' ')) {
             result.push(word[0].toUpperCase());
         }
-    } else {
-        return false;
     }
   }
   return result.sort().join('');
