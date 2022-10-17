@@ -25,7 +25,7 @@ function encodeLine(str) {
           counter = 1;
       }
   }
-  return res; 
+  return res.join(''); 
 }
 
 module.exports = {
