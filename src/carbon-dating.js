@@ -17,16 +17,16 @@ const HALF_LIFE_PERIOD = 5730;
  * dateSample('WOOT!') => false
  *
  */
-function dateSample(sampleActivity ) {
-  // throw new NotImplementedError('Not implemented');
-  let k = 0.693 / HALF_LIFE_PERIOD;
-  let result = Math.ceil(Math.ceil((MODERN_ACTIVITY / +sampleActivity)) / k);
+function dateSample(/* sampleActivity */) {
+  throw new NotImplementedError('Not implemented');
+  // let k = 0.693 / HALF_LIFE_PERIOD;
+  // let result = Math.ceil(Math.ceil((MODERN_ACTIVITY / +sampleActivity)) / k);
   
-  if(isNaN(result)) {
-    return false;
-  } else {
-    return result;
-  }
+  // if(isNaN(result)) {
+  //   return false;
+  // } else {
+  //   return result;
+  // }
 }
 
 module.exports = {
