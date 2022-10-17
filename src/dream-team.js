@@ -17,14 +17,19 @@ function createDreamTeam(members) {
   // throw new NotImplementedError('Not implemented');
   let result = [];
 
-  for(let elem of members) {
-    if(typeof(elem) == 'string') {
-        for(let word of elem.split(' ')) {
-            result.push(word[0].toUpperCase());
+  if(Array.isArray(members)) {
+        for(let elem of members) {
+            if(typeof(elem) == 'string') {
+                for(let word of elem.split(' ')) {
+                    result.push(word[0].toUpperCase());
+                }
+            } 
         }
-    }
+        return result.sort().join('');
+
+  } else {
+      return false;
   }
-  return result.sort().join('');
     
 }
 
