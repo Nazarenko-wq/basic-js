@@ -33,7 +33,7 @@ function deleteDigit(n) {
       }
   }
 
-  return maxNumber;
+  return +maxNumber;
 }
 
 module.exports = {
